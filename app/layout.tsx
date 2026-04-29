@@ -1,16 +1,36 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Ms_Madi, Noto_Serif_Display } from "next/font/google";
+import localFont from "next/font/local";
+import Link from "next/link";
+import Image from "next/image";
+import Loader from "@/components/Loader";
+import SideNav from "@/components/SideNav";
+import TransitionProvider from "@/components/TransitionProvider";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const akros = localFont({
+  src: "../public/font/Akros-Regular.otf",
+  variable: "--font-akros",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const msMadi = Ms_Madi({
+  variable: "--font-script",
   subsets: ["latin"],
+  weight: "400",
 });
+
+const notoSerifDisplay = Noto_Serif_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ['400', '700']
+});
+
+const dmSans = DM_Sans({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  weight: ['400', '500', '700']
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +45,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${notoSerifDisplay.variable} ${dmSans.variable} ${akros.variable} ${msMadi.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        <Loader />
+        <Link href="/" className="fixed top-6 left-6 md:left-16 z-50 hover:opacity-70 transition-opacity">
+          <Image
+            src="/images/logo/logo.png"
+            alt="Rumami logo"
+            width={80}
+            height={80}
+            priority
+          />
+        </Link>
+        <TransitionProvider>
+          {children}
+        </TransitionProvider>
+        <SideNav />
+      </body>
     </html>
   );
 }
