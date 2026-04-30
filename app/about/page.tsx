@@ -6,7 +6,7 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
-import PageOrnament from "@/components/PageOrnament";
+import PageOrnament from "@/components/layout/PageOrnament";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -166,14 +166,14 @@ export default function AboutPage() {
       {/* Header Section */}
       <section className="relative w-full pt-40 pb-20 flex flex-col items-center justify-center px-6 text-center z-10">
         <span className="font-sans text-xs tracking-[0.2em] uppercase text-gray-500 mb-12">
-          RUMAMI
+          RUMAMI INTERIOR
         </span>
 
         <h1 className="relative font-serif text-[clamp(4rem,10vw,11rem)] leading-[0.85] tracking-[-0.02em] uppercase max-w-6xl mx-auto flex flex-col items-center">
           <div ref={headerRef} className="invisible text-center">
-            <span className="block">ESTEEMED</span>
-            <span className="block">INTERNATIONAL</span>
-            <span className="block">DESIGNER</span>
+            <span className="block">CRAFTING</span>
+            <span className="block">YOUR DREAM</span>
+            <span className="block">SPACES</span>
           </div>
           <svg
             ref={aboutSvgRef}
@@ -183,7 +183,7 @@ export default function AboutPage() {
             strokeWidth="1.8"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="invisible absolute -bottom-40 left-1/2 -translate-x-1/2 -translate-y-10 -rotate-6 text-textAccent w-[clamp(15rem,30vw,32rem)] z-10 pointer-events-none"
+            className="invisible absolute -bottom-40 left-1/2 -translate-x-1/2 -translate-y-24 lg:-translate-y-10 -rotate-6 text-textAccent w-[clamp(12rem,30vw,32rem)] z-10 pointer-events-none"
             aria-label="About"
           >
             <g transform="translate(-8.0005867,-1.9281062)">
@@ -229,18 +229,17 @@ export default function AboutPage() {
           </svg>
         </h1>
 
-        <p className="font-sans text-dark text-base md:text-[1.1rem] max-w-2xl mt-32 leading-relaxed text-center">
-          Based in Antwerp, Belgium, Rumami Interiors is a high-end interior design studio<br className="hidden md:block" />
-          offering a full range of bespoke interior design services<br className="hidden md:block" />
-          aimed at a discerning and sophisticated international clientele.<br className="hidden md:block" />
-          Projects range from private residences and real-estate developments<br className="hidden md:block" />
-          to commercial spaces, hotels and yachts.
+        <p className="font-sans text-dark text-base md:text-[1.1rem] max-w-2xl mt-32 md:mt-48 leading-relaxed text-center">
+          Rumami Interior adalah studio desain interior profesional yang berdedikasi untuk<br className="hidden md:block" />
+          menciptakan ruangan custom yang memadukan estetika dengan fungsionalitas secara sempurna.<br className="hidden md:block" />
+          Mulai dari kitchen set mewah hingga kamar tidur utama yang tenang,<br className="hidden md:block" />
+          kami mewujudkan hunian impian bagi klien kami di seluruh Jabodetabek.
         </p>
 
         <div className="mt-32 flex items-center justify-center w-full max-w-2xl gap-8">
           <div className="h-[1px] bg-textAccent/40 flex-1"></div>
           <span className="font-sans text-xs tracking-[0.15em] uppercase text-textAccent font-medium">
-            (WHAT WE DO)
+            (APA YANG KAMI LAKUKAN)
           </span>
           <div className="h-[1px] bg-textAccent/40 flex-1"></div>
         </div>
@@ -264,29 +263,17 @@ export default function AboutPage() {
         {/* Middle Column: Text */}
         <div className="col-span-1 md:col-span-5 flex flex-col gap-8 font-sans text-dark text-[0.95rem] md:text-base leading-[1.8] pt-2">
           <p>
-            Rumami Interiors was established in 2019 by Dutch interior designer Pieter Elzenga who acquired his extensive background in design from studying in London and from working on numerous luxury projects all around the world - from New York to London, Miami to Marbella, Dubai to Bali.
+            Berdiri dengan prinsip "Estetika Bertemu Fungsionalitas," Rumami Interior telah memantapkan dirinya sebagai mitra terpercaya bagi para pemilik hunian yang menginginkan solusi interior profesional dan berkualitas tinggi. Studio kami berspesialisasi dalam desain custom yang tidak hanya menawan secara visual, tetapi juga sangat personal sesuai dengan gaya hidup Anda.
           </p>
           <p>
-            Pieter started his career working for high-end retail brands where he honed his passion for design and styling. In 2006 he joined the company of internationally acclaimed interior designer Eric Kuster and was instrumental in the company&apos;s European expansion. In 2010 he set up and managed the branch in Belgium and in 2019, backed up by a loyal team of dedicated professionals, he took over the Antwerp-based studio and showroom and relaunched it as Rumami Interiors while remaining a premium re-seller of Eric Kuster&apos;s label Metropolitan Luxury.
+            Keahlian kami mencakup seluruh spektrum transformasi interior—mulai dari perencanaan ruang konseptual dan konsultasi profesional hingga produksi furniture custom. Kami menggunakan material premium seperti Plywood Multipleks dan PVC berkualitas tinggi untuk memastikan setiap kitchen set, wardrobe, dan area hunian yang kami bangun tahan lama.
           </p>
           <p>
-            The aesthetic of the &apos;Rumami project&apos; is to create a contemporary yet timeless luxurious atmosphere with an emphasis on premium-quality fabrics in soothing nature tones reminiscent of the 5-star hotel experience. Each project, however big or small, is the result of thematic research based on the client&apos;s wishes, the location and the cultural environment, bringing together French savoir vivre, Italian design virtuosity and American functionality tweaked with touches from across the globe inspired by Pieter&apos;s many travels.
+            Dengan fokus pada transparansi dan kepuasan klien, kami menawarkan survei gratis dan saran ahli untuk membuat desain profesional dapat diakses oleh semua orang. Baik itu menciptakan tempat istirahat yang tenang atau dapur modern berperforma tinggi, misi kami adalah mengubah visi rumah impian Anda menjadi kenyataan yang nyata dan berkesan.
           </p>
         </div>
 
-        {/* Right Column: Sticky Navigation */}
-        <div className="col-span-1 md:col-span-2 hidden md:block">
-          <div className="sticky top-32 flex flex-col gap-3 font-sans text-[0.65rem] tracking-[0.15em] uppercase font-bold text-dark pt-2">
-            <Link href="/" className="hover:text-textAccent transition-colors">HOME</Link>
-            <Link href="#" className="hover:text-textAccent transition-colors">STUDIO</Link>
-            <div className="flex items-center gap-2 text-textAccent">
-              <span aria-hidden>&raquo;</span> RUMAMI
-            </div>
-            <Link href="#" className="hover:text-textAccent transition-colors">WORK</Link>
-            <Link href="#" className="hover:text-textAccent transition-colors">CONTACT</Link>
-            <Link href="#" className="hover:text-textAccent transition-colors">WEBSHOP</Link>
-          </div>
-        </div>
+
       </section>
 
       {/* Image Grid Section */}
@@ -312,18 +299,22 @@ export default function AboutPage() {
       {/* Footer Section */}
       <section className="relative w-full mt-24 flex flex-col items-center px-6 z-10">
         <span className="font-sans text-[0.65rem] tracking-[0.2em] uppercase text-dark mb-6">
-          VIEW PROJECTS
+          LIHAT KARYA
         </span>
-        <h2 ref={footerRef} className="invisible font-serif text-[clamp(5rem,18vw,20rem)] leading-none text-textAccent tracking-[-0.02em] overflow-hidden py-4">
-          WORK
-        </h2>
+
+        <Link href={'/works'}>
+          <h2 ref={footerRef} className="invisible font-serif text-[clamp(5rem,18vw,20rem)] leading-none text-textAccent tracking-[-0.02em] overflow-hidden py-4">
+            WORK
+          </h2>
+        </Link>
+
 
         <div className="w-full max-w-xl h-[1px] bg-textAccent/40 mt-12 mb-16"></div>
 
         <div className="flex flex-col items-center gap-3 font-sans text-[0.6rem] tracking-[0.1em] uppercase text-textAccent text-center max-w-2xl leading-relaxed">
-          <p>WORLDWIDE <span className="mx-2 font-serif text-[0.8rem]">&oplus;</span> TURNKEY INTERIOR PROJECTS</p>
-          <p>RUMAMI INTERIORS IS A PREMIUM RE-SELLER OF METROPOLITAN LUXURY</p>
-          <p>TERMS &amp; CONDITIONS <span className="mx-2">•</span> TERMS &amp; CONDITIONS B2B <span className="mx-2">•</span> PRIVACY POLICY <span className="mx-2">•</span> SITE BY RUMAMI</p>
+          <p>DESAIN INTERIOR PROFESIONAL <span className="mx-2 font-serif text-[0.8rem]">&oplus;</span> SOLUSI FURNITURE custom</p>
+          <p>MELAYANI JABODETABEK DENGAN KEAHLIAN ESTETIKA DAN FUNGSIONAL</p>
+          <p>KONSULTASI <span className="mx-2">•</span> INTERIOR custom <span className="mx-2">•</span> PRODUKSI FURNITURE <span className="mx-2">•</span> SITE BY RUMAMI</p>
         </div>
       </section>
 

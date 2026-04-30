@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import PageOrnament from '@/components/PageOrnament';
+import PageOrnament from '@/components/layout/PageOrnament';
 
 export default function NotFound() {
   return (

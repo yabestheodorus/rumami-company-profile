@@ -1,7 +1,9 @@
-import About from "@/components/About";
-import Hero from "@/components/Hero";
-import PageOrnament from "@/components/PageOrnament";
-import CTA from "@/components/CTA";
+import About from "@/components/sections/About";
+import Hero from "@/components/sections/Hero";
+import PageOrnament from "@/components/layout/PageOrnament";
+import Process from "@/components/sections/Process";
+import Services from "@/components/sections/Services";
+import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <PageOrnament />
       <Hero />
       <About />
+      <Process />
+      <Services />
       <CTA />
     </main>
   );

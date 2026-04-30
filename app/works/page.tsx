@@ -1,12 +1,12 @@
-import CTA from "@/components/CTA";
-import PageOrnament from "@/components/PageOrnament";
-import WorksGallery from "@/components/WorksGallery";
-import WorksHero from "@/components/WorksHero";
+import CTA from "@/components/sections/CTA";
+import PageOrnament from "@/components/layout/PageOrnament";
+import WorksGallery from "@/components/sections/WorksGallery";
+import WorksHero from "@/components/sections/WorksHero";
 
 export const metadata = {
   title: "Work — Rumami Atelier",
   description:
-    "A gallery of bespoke interiors, architecture, furniture and process work by Rumami.",
+    "Galeri interior custom, arsitektur, furniture, dan proses pengerjaan oleh Rumami.",
 };
 
 export default function WorksPage() {

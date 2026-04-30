@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { DM_Sans, Ms_Madi, Noto_Serif_Display } from "next/font/google";
 import localFont from "next/font/local";
 import Link from "next/link";
-import Image from "next/image";
-import Loader from "@/components/Loader";
-import SideNav from "@/components/SideNav";
-import TransitionProvider from "@/components/TransitionProvider";
+import Loader from "@/components/layout/Loader";
+import SideNav from "@/components/layout/SideNav";
+import SmoothScroll from "@/components/layout/SmoothScroll";
+import LogoSVG from "@/components/common/LogoSVG";
 import "./globals.css";
 
 const akros = localFont({
@@ -49,18 +49,13 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
         <Loader />
-        <Link href="/" className="fixed top-6 left-6 md:left-16 z-50 hover:opacity-70 transition-opacity">
-          <Image
-            src="/images/logo/logo.png"
-            alt="Rumami logo"
-            width={80}
-            height={80}
-            priority
-          />
+        <span className="fixed top-7 font-semibold left-8 z-50 md:hidden font-sans text-[1rem] tracking-widest text-textAccent">©2026</span>
+        <Link href="/" className="fixed top-7 left-1/2 -translate-x-1/2 md:top-6 md:left-16 md:translate-x-0 z-50 hover:opacity-70 transition-opacity">
+          <LogoSVG className="text-textAccent w-[30px] h-auto md:w-[40px]" />
         </Link>
-        <TransitionProvider>
+        <SmoothScroll>
           {children}
-        </TransitionProvider>
+        </SmoothScroll>
         <SideNav />
       </body>
     </html>
