@@ -1,0 +1,38 @@
+<svg width="32" height="32" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(2.1923787,0,0,2.1923787,-835.04523,-335.43742)">
+    <path
+      transform="rotate(90,495.869,258.173)"
+      stroke="#1a1a1a"
+      stroke-width="14"
+      stroke-linecap="butt"
+      stroke-linejoin="miter"
+      d="M 441.172465,208.464615 l 29.616545,-50.000005 108.939,-0.58303 0.24432,100.22286 0.20884,99.64884 -109.39216,0.71135 -59.23309,-100.00001 Z"
+    />
+    <path
+      transform="rotate(90,496.419,261.105)"
+      stroke="#1a1a1a"
+      stroke-width="14"
+      stroke-linecap="butt"
+      stroke-linejoin="miter"
+      d="M 468.54338,232.534215 l 15.09386,-28.738405 55.51999,-0.33511 0.12452,57.6049 0.10643,57.27497 -55.75094,0.40886 -30.18772,-57.47681 Z"
+    />
+    <line
+      stroke="#1a1a1a"
+      stroke-width="14"
+      stroke-linecap="butt"
+      stroke-linejoin="miter"
+      y2="321.75562"
+      x2="596.26697"
+      y1="321.46909"
+      x1="396.84003"
+    />
+    <path
+      transform="rotate(104,434.641,186.545)"
+      stroke="#1a1a1a"
+      stroke-width="6"
+      stroke-linecap="butt"
+      stroke-linejoin="miter"
+      d="M 430.10331,186.545245 l 0,-4.609455 9.07506,9.21891 -9.07506,0 Z"
+    />
+  </g>
+</svg>

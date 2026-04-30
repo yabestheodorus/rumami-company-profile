@@ -4,7 +4,7 @@ import WorksGallery from "@/components/sections/WorksGallery";
 import WorksHero from "@/components/sections/WorksHero";
 
 export const metadata = {
-  title: "Work — Rumami Atelier",
+  title: "Work",
   description:
     "Galeri interior custom, arsitektur, furniture, dan proses pengerjaan oleh Rumami.",
 };
