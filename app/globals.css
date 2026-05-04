@@ -4,6 +4,7 @@
   --background: #F9F5EF;
   --foreground: #C19A5B;
   --bgDark: #151415;
+  color-scheme: light;
 }
 
 @theme inline {
@@ -16,12 +17,6 @@
   --font-sans: var(--font-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);

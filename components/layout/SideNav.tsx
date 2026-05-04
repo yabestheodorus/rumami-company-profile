@@ -88,7 +88,7 @@ export default function SideNav() {
                 >
                   <span>Jakarta, Indonesia</span>
                   <a href="mailto:hello@rumami.com" className="hover:text-textAccent transition-colors">hello@rumami.com</a>
-                  <span>+62 812 3456 7890</span>
+                  <span>+62 877 1872 5531</span>
                 </motion.div>
               </div>
 

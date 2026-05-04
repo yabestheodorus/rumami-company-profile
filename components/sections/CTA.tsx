@@ -115,10 +115,10 @@ export default function CTA() {
 
         <div className="mt-40 lg:mt-48 flex flex-col items-center md:items-start md:pl-72 gap-4 relative z-20">
           <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 font-sans text-textAccent uppercase tracking-widest text-[0.8rem] lg:text-sm font-medium md:translate-x-36 items-center">
-            <a href="https://api.whatsapp.com/send?phone=087718725531" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
+            <a href="https://api.whatsapp.com/send?phone=6287718725531" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
               <span aria-hidden className="text-lg leading-none">&raquo;</span> KIRIM PESAN
             </a>
-            <a href="https://api.whatsapp.com/send?phone=087718725531" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
+            <a href="https://api.whatsapp.com/send?phone=6287718725531" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
               <span aria-hidden className="text-lg leading-none">&raquo;</span> WHATSAPP 0877-1872-5531
             </a>
           </div>
